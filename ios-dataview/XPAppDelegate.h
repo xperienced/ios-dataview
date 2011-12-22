@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class XPDataTableViewController;
+@class XPDataTable1ViewController;
 
 @interface XPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) XPDataTableViewController *viewController;
+@property (strong, nonatomic) XPDataTable1ViewController *viewController;
 
 @end

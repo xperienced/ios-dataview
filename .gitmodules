@@ -1,0 +1,3 @@
+[submodule "lib/ios-datatable"]
+	path = lib/ios-datatable
+	url = git://github.com/xperienced/ios-datatable.git

@@ -8,7 +8,7 @@
 
 #import "XPAppDelegate.h"
 
-#import "XPDataTableViewController.h"
+#import "XPDataTable1ViewController.h"
 
 @implementation XPAppDelegate
 
@@ -20,9 +20,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[XPDataTableViewController alloc] initWithNibName:@"XPDataTableViewController" bundle:nil];
+        self.viewController = [[XPDataTable1ViewController alloc] initWithNibName:@"XPDataTable1ViewController" bundle:nil];
     } else {
-        self.viewController = [[XPDataTableViewController alloc] initWithNibName:@"XPDataTableViewController" bundle:nil];
+        self.viewController = [[XPDataTable1ViewController alloc] initWithNibName:@"XPDataTable1ViewController" bundle:nil];
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

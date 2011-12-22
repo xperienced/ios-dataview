@@ -13,8 +13,10 @@
 		1ABBE54C14A3D20700B856A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBE54A14A3D20700B856A8 /* InfoPlist.strings */; };
 		1ABBE54E14A3D20700B856A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE54D14A3D20700B856A8 /* main.m */; };
 		1ABBE55214A3D20700B856A8 /* XPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE55114A3D20700B856A8 /* XPAppDelegate.m */; };
-		1ABBE56414A3D2BD00B856A8 /* XPDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE56214A3D2BD00B856A8 /* XPDataTableViewController.m */; };
-		1ABBE56514A3D2BD00B856A8 /* XPDataTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBE56314A3D2BD00B856A8 /* XPDataTableViewController.xib */; };
+		1ABBE56414A3D2BD00B856A8 /* XPDataTable1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE56214A3D2BD00B856A8 /* XPDataTable1ViewController.m */; };
+		1ABBE56514A3D2BD00B856A8 /* XPDataTable1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBE56314A3D2BD00B856A8 /* XPDataTable1ViewController.xib */; };
+		1ABBE56714A3D6EE00B856A8 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBE56614A3D6EE00B856A8 /* lib */; };
+		1ABBE56F14A3DB1E00B856A8 /* libios-datatable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBE56E14A3DB1E00B856A8 /* libios-datatable.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +30,11 @@
 		1ABBE54F14A3D20700B856A8 /* ios-dataview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-dataview-Prefix.pch"; sourceTree = "<group>"; };
 		1ABBE55014A3D20700B856A8 /* XPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPAppDelegate.h; sourceTree = "<group>"; };
 		1ABBE55114A3D20700B856A8 /* XPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPAppDelegate.m; sourceTree = "<group>"; };
-		1ABBE56114A3D2BD00B856A8 /* XPDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDataTableViewController.h; sourceTree = "<group>"; };
-		1ABBE56214A3D2BD00B856A8 /* XPDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDataTableViewController.m; sourceTree = "<group>"; };
-		1ABBE56314A3D2BD00B856A8 /* XPDataTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XPDataTableViewController.xib; sourceTree = "<group>"; };
+		1ABBE56114A3D2BD00B856A8 /* XPDataTable1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDataTable1ViewController.h; sourceTree = "<group>"; };
+		1ABBE56214A3D2BD00B856A8 /* XPDataTable1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDataTable1ViewController.m; sourceTree = "<group>"; };
+		1ABBE56314A3D2BD00B856A8 /* XPDataTable1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XPDataTable1ViewController.xib; sourceTree = "<group>"; };
+		1ABBE56614A3D6EE00B856A8 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		1ABBE56E14A3DB1E00B856A8 /* libios-datatable.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libios-datatable.a"; path = "lib/ios-datatable/build/Release-iphoneos/libios-datatable.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ABBE56F14A3DB1E00B856A8 /* libios-datatable.a in Frameworks */,
 				1ABBE54214A3D20700B856A8 /* UIKit.framework in Frameworks */,
 				1ABBE54414A3D20700B856A8 /* Foundation.framework in Frameworks */,
 				1ABBE54614A3D20700B856A8 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +55,8 @@
 		1ABBE53214A3D20700B856A8 = {
 			isa = PBXGroup;
 			children = (
+				1ABBE56E14A3DB1E00B856A8 /* libios-datatable.a */,
+				1ABBE56614A3D6EE00B856A8 /* lib */,
 				1ABBE54714A3D20700B856A8 /* ios-dataview */,
 				1ABBE54014A3D20700B856A8 /* Frameworks */,
 				1ABBE53E14A3D20700B856A8 /* Products */,
@@ -79,9 +86,9 @@
 			children = (
 				1ABBE55014A3D20700B856A8 /* XPAppDelegate.h */,
 				1ABBE55114A3D20700B856A8 /* XPAppDelegate.m */,
-				1ABBE56114A3D2BD00B856A8 /* XPDataTableViewController.h */,
-				1ABBE56214A3D2BD00B856A8 /* XPDataTableViewController.m */,
-				1ABBE56314A3D2BD00B856A8 /* XPDataTableViewController.xib */,
+				1ABBE56114A3D2BD00B856A8 /* XPDataTable1ViewController.h */,
+				1ABBE56214A3D2BD00B856A8 /* XPDataTable1ViewController.m */,
+				1ABBE56314A3D2BD00B856A8 /* XPDataTable1ViewController.xib */,
 				1ABBE54814A3D20700B856A8 /* Supporting Files */,
 			);
 			path = "ios-dataview";
@@ -149,7 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ABBE54C14A3D20700B856A8 /* InfoPlist.strings in Resources */,
-				1ABBE56514A3D2BD00B856A8 /* XPDataTableViewController.xib in Resources */,
+				1ABBE56514A3D2BD00B856A8 /* XPDataTable1ViewController.xib in Resources */,
+				1ABBE56714A3D6EE00B856A8 /* lib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +170,7 @@
 			files = (
 				1ABBE54E14A3D20700B856A8 /* main.m in Sources */,
 				1ABBE55214A3D20700B856A8 /* XPAppDelegate.m in Sources */,
-				1ABBE56414A3D2BD00B856A8 /* XPDataTableViewController.m in Sources */,
+				1ABBE56414A3D2BD00B856A8 /* XPDataTable1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +242,7 @@
 				GCC_PREFIX_HEADER = "ios-dataview/ios-dataview-Prefix.pch";
 				INFOPLIST_FILE = "ios-dataview/ios-dataview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}/lib\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -245,6 +254,7 @@
 				GCC_PREFIX_HEADER = "ios-dataview/ios-dataview-Prefix.pch";
 				INFOPLIST_FILE = "ios-dataview/ios-dataview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}/lib\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

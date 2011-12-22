@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XPDataTable1ViewController.h"
+#import "XPDataTableViewController.h"
 
-@interface XPDataTableViewController : UITableViewController
+@interface XPDataTable1ViewController : XPDataTableViewController
 
 @end
