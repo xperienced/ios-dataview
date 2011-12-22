@@ -9,6 +9,7 @@
 #import "XPDataTable1ViewController.h"
 #import "XPDataGroup.h"
 #import "XPDataCell.h"
+#import "XPSwitchDataCell.h"
 
 @implementation XPDataTable1ViewController
 
@@ -30,8 +31,9 @@
     
     XPDataCell *cell1 = [[XPDataCell alloc] initWithText:@"Sample cell 1"];
     XPDataCell *cell2 = [[XPDataCell alloc] initWithText:@"Sample cell 2"];
+    XPSwitchDataCell *cell3 = [[XPSwitchDataCell alloc] initWithText:@"Sample cell 2" on:YES];
     
-    group1.cells = [NSArray arrayWithObjects:cell1, cell2, nil];
+    group1.cells = [NSArray arrayWithObjects:cell1, cell2, cell3, nil];
     
     self.dataGroups = [NSArray arrayWithObjects:group1, nil];
     

@@ -15,9 +15,18 @@
 		1ABBE55214A3D20700B856A8 /* XPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE55114A3D20700B856A8 /* XPAppDelegate.m */; };
 		1ABBE56414A3D2BD00B856A8 /* XPDataTable1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE56214A3D2BD00B856A8 /* XPDataTable1ViewController.m */; };
 		1ABBE56514A3D2BD00B856A8 /* XPDataTable1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBE56314A3D2BD00B856A8 /* XPDataTable1ViewController.xib */; };
-		1ABBE56714A3D6EE00B856A8 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBE56614A3D6EE00B856A8 /* lib */; };
-		1ABBE56F14A3DB1E00B856A8 /* libios-datatable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBE56E14A3DB1E00B856A8 /* libios-datatable.a */; };
+		1ABBE58C14A3E57D00B856A8 /* libios-datatable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBE58B14A3E55D00B856A8 /* libios-datatable.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ABBE58A14A3E55D00B856A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ABBE58614A3E55C00B856A8 /* ios-datatable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A90CAC114A28AD600F91E1C;
+			remoteInfo = "ios-datatable";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1ABBE53D14A3D20700B856A8 /* ios-dataview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dataview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,8 +42,7 @@
 		1ABBE56114A3D2BD00B856A8 /* XPDataTable1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDataTable1ViewController.h; sourceTree = "<group>"; };
 		1ABBE56214A3D2BD00B856A8 /* XPDataTable1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDataTable1ViewController.m; sourceTree = "<group>"; };
 		1ABBE56314A3D2BD00B856A8 /* XPDataTable1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XPDataTable1ViewController.xib; sourceTree = "<group>"; };
-		1ABBE56614A3D6EE00B856A8 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
-		1ABBE56E14A3DB1E00B856A8 /* libios-datatable.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libios-datatable.a"; path = "lib/ios-datatable/build/Release-iphoneos/libios-datatable.a"; sourceTree = "<group>"; };
+		1ABBE58614A3E55C00B856A8 /* ios-datatable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "ios-datatable.xcodeproj"; path = "lib/ios-datatable/ios-datatable.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ABBE56F14A3DB1E00B856A8 /* libios-datatable.a in Frameworks */,
+				1ABBE58C14A3E57D00B856A8 /* libios-datatable.a in Frameworks */,
 				1ABBE54214A3D20700B856A8 /* UIKit.framework in Frameworks */,
 				1ABBE54414A3D20700B856A8 /* Foundation.framework in Frameworks */,
 				1ABBE54614A3D20700B856A8 /* CoreGraphics.framework in Frameworks */,
@@ -55,8 +63,7 @@
 		1ABBE53214A3D20700B856A8 = {
 			isa = PBXGroup;
 			children = (
-				1ABBE56E14A3DB1E00B856A8 /* libios-datatable.a */,
-				1ABBE56614A3D6EE00B856A8 /* lib */,
+				1ABBE58414A3E54100B856A8 /* lib */,
 				1ABBE54714A3D20700B856A8 /* ios-dataview */,
 				1ABBE54014A3D20700B856A8 /* Frameworks */,
 				1ABBE53E14A3D20700B856A8 /* Products */,
@@ -105,6 +112,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1ABBE58414A3E54100B856A8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1ABBE58614A3E55C00B856A8 /* ios-datatable.xcodeproj */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		1ABBE58714A3E55C00B856A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ABBE58B14A3E55D00B856A8 /* libios-datatable.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,12 +166,28 @@
 			mainGroup = 1ABBE53214A3D20700B856A8;
 			productRefGroup = 1ABBE53E14A3D20700B856A8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1ABBE58714A3E55C00B856A8 /* Products */;
+					ProjectRef = 1ABBE58614A3E55C00B856A8 /* ios-datatable.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1ABBE53C14A3D20700B856A8 /* ios-dataview */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1ABBE58B14A3E55D00B856A8 /* libios-datatable.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libios-datatable.a";
+			remoteRef = 1ABBE58A14A3E55D00B856A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1ABBE53B14A3D20700B856A8 /* Resources */ = {
@@ -157,7 +196,6 @@
 			files = (
 				1ABBE54C14A3D20700B856A8 /* InfoPlist.strings in Resources */,
 				1ABBE56514A3D2BD00B856A8 /* XPDataTable1ViewController.xib in Resources */,
-				1ABBE56714A3D6EE00B856A8 /* lib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +316,7 @@
 				1ABBE56014A3D20800B856A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
