@@ -1,0 +1,275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ABBE54214A3D20700B856A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBE54114A3D20700B856A8 /* UIKit.framework */; };
+		1ABBE54414A3D20700B856A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBE54314A3D20700B856A8 /* Foundation.framework */; };
+		1ABBE54614A3D20700B856A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBE54514A3D20700B856A8 /* CoreGraphics.framework */; };
+		1ABBE54C14A3D20700B856A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBE54A14A3D20700B856A8 /* InfoPlist.strings */; };
+		1ABBE54E14A3D20700B856A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE54D14A3D20700B856A8 /* main.m */; };
+		1ABBE55214A3D20700B856A8 /* XPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE55114A3D20700B856A8 /* XPAppDelegate.m */; };
+		1ABBE56414A3D2BD00B856A8 /* XPDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE56214A3D2BD00B856A8 /* XPDataTableViewController.m */; };
+		1ABBE56514A3D2BD00B856A8 /* XPDataTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBE56314A3D2BD00B856A8 /* XPDataTableViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1ABBE53D14A3D20700B856A8 /* ios-dataview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dataview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ABBE54114A3D20700B856A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1ABBE54314A3D20700B856A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1ABBE54514A3D20700B856A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1ABBE54914A3D20700B856A8 /* ios-dataview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-dataview-Info.plist"; sourceTree = "<group>"; };
+		1ABBE54B14A3D20700B856A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1ABBE54D14A3D20700B856A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1ABBE54F14A3D20700B856A8 /* ios-dataview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-dataview-Prefix.pch"; sourceTree = "<group>"; };
+		1ABBE55014A3D20700B856A8 /* XPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPAppDelegate.h; sourceTree = "<group>"; };
+		1ABBE55114A3D20700B856A8 /* XPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPAppDelegate.m; sourceTree = "<group>"; };
+		1ABBE56114A3D2BD00B856A8 /* XPDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDataTableViewController.h; sourceTree = "<group>"; };
+		1ABBE56214A3D2BD00B856A8 /* XPDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDataTableViewController.m; sourceTree = "<group>"; };
+		1ABBE56314A3D2BD00B856A8 /* XPDataTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XPDataTableViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ABBE53A14A3D20700B856A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABBE54214A3D20700B856A8 /* UIKit.framework in Frameworks */,
+				1ABBE54414A3D20700B856A8 /* Foundation.framework in Frameworks */,
+				1ABBE54614A3D20700B856A8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ABBE53214A3D20700B856A8 = {
+			isa = PBXGroup;
+			children = (
+				1ABBE54714A3D20700B856A8 /* ios-dataview */,
+				1ABBE54014A3D20700B856A8 /* Frameworks */,
+				1ABBE53E14A3D20700B856A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ABBE53E14A3D20700B856A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ABBE53D14A3D20700B856A8 /* ios-dataview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ABBE54014A3D20700B856A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ABBE54114A3D20700B856A8 /* UIKit.framework */,
+				1ABBE54314A3D20700B856A8 /* Foundation.framework */,
+				1ABBE54514A3D20700B856A8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1ABBE54714A3D20700B856A8 /* ios-dataview */ = {
+			isa = PBXGroup;
+			children = (
+				1ABBE55014A3D20700B856A8 /* XPAppDelegate.h */,
+				1ABBE55114A3D20700B856A8 /* XPAppDelegate.m */,
+				1ABBE56114A3D2BD00B856A8 /* XPDataTableViewController.h */,
+				1ABBE56214A3D2BD00B856A8 /* XPDataTableViewController.m */,
+				1ABBE56314A3D2BD00B856A8 /* XPDataTableViewController.xib */,
+				1ABBE54814A3D20700B856A8 /* Supporting Files */,
+			);
+			path = "ios-dataview";
+			sourceTree = "<group>";
+		};
+		1ABBE54814A3D20700B856A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1ABBE54914A3D20700B856A8 /* ios-dataview-Info.plist */,
+				1ABBE54A14A3D20700B856A8 /* InfoPlist.strings */,
+				1ABBE54D14A3D20700B856A8 /* main.m */,
+				1ABBE54F14A3D20700B856A8 /* ios-dataview-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ABBE53C14A3D20700B856A8 /* ios-dataview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ABBE55E14A3D20800B856A8 /* Build configuration list for PBXNativeTarget "ios-dataview" */;
+			buildPhases = (
+				1ABBE53914A3D20700B856A8 /* Sources */,
+				1ABBE53A14A3D20700B856A8 /* Frameworks */,
+				1ABBE53B14A3D20700B856A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-dataview";
+			productName = "ios-dataview";
+			productReference = 1ABBE53D14A3D20700B856A8 /* ios-dataview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ABBE53414A3D20700B856A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1ABBE53714A3D20700B856A8 /* Build configuration list for PBXProject "ios-dataview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1ABBE53214A3D20700B856A8;
+			productRefGroup = 1ABBE53E14A3D20700B856A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ABBE53C14A3D20700B856A8 /* ios-dataview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ABBE53B14A3D20700B856A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABBE54C14A3D20700B856A8 /* InfoPlist.strings in Resources */,
+				1ABBE56514A3D2BD00B856A8 /* XPDataTableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ABBE53914A3D20700B856A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABBE54E14A3D20700B856A8 /* main.m in Sources */,
+				1ABBE55214A3D20700B856A8 /* XPAppDelegate.m in Sources */,
+				1ABBE56414A3D2BD00B856A8 /* XPDataTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1ABBE54A14A3D20700B856A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ABBE54B14A3D20700B856A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ABBE55C14A3D20800B856A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ABBE55D14A3D20800B856A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1ABBE55F14A3D20800B856A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-dataview/ios-dataview-Prefix.pch";
+				INFOPLIST_FILE = "ios-dataview/ios-dataview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1ABBE56014A3D20800B856A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-dataview/ios-dataview-Prefix.pch";
+				INFOPLIST_FILE = "ios-dataview/ios-dataview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ABBE53714A3D20700B856A8 /* Build configuration list for PBXProject "ios-dataview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABBE55C14A3D20800B856A8 /* Debug */,
+				1ABBE55D14A3D20800B856A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ABBE55E14A3D20800B856A8 /* Build configuration list for PBXNativeTarget "ios-dataview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABBE55F14A3D20800B856A8 /* Debug */,
+				1ABBE56014A3D20800B856A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ABBE53414A3D20700B856A8 /* Project object */;
+}
