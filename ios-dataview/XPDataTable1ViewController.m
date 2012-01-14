@@ -11,6 +11,7 @@
 #import "XPDataCell.h"
 #import "XPSwitchDataCell.h"
 #import "XPSliderDataCell.h"
+#import "XPCheckmarkDataCell.h"
 
 @implementation XPDataTable1ViewController
 
@@ -37,7 +38,15 @@
     
     group1.cells = [NSArray arrayWithObjects:cell1, cell2, cell3, cell4, nil];
     
-    self.dataGroups = [NSArray arrayWithObjects:group1, nil];
+    XPDataGroup *checkmarkGroup = [[XPDataGroup alloc] initWithText:@"Checkmark cells"];
+    
+    XPDataCell *checkmark1 = [[XPCheckmarkDataCell alloc] initWithText:@"Checkmark 1" checked:YES];
+    XPDataCell *checkmark2 = [[XPCheckmarkDataCell alloc] initWithText:@"Checkmark 2"];
+    XPDataCell *checkmark3 = [[XPCheckmarkDataCell alloc] initWithText:@"Checkmark 3"];
+
+    checkmarkGroup.cells = [NSArray arrayWithObjects:checkmark1, checkmark2, checkmark3, nil];
+    
+    self.dataGroups = [NSArray arrayWithObjects:group1, checkmarkGroup, nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
