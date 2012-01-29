@@ -13,6 +13,7 @@
 #import "XPSliderDataCell.h"
 #import "XPCheckmarkDataCell.h"
 #import "XPPickerDataCell.h"
+#import "XPDisclosureDataCell.h"
 
 @implementation XPDataTable1ViewController
 
@@ -60,7 +61,17 @@
     
     pickerGroup.cells = [NSArray arrayWithObjects:picker1, picker2, nil];
     
-    self.dataGroups = [NSArray arrayWithObjects:group1, checkmarkGroup, pickerGroup, nil];
+    XPDataGroup *disclosureDataGroup = [[XPDataGroup alloc] initWithText:@"Disclosure group"];
+    
+    XPDataCell *disclosureDataCell1 = [[XPDisclosureDataCell alloc] initWithText:@"Color" items:colors value:@"Green"];
+    XPDataCell *disclosureDataCell2 = [[XPDisclosureDataCell alloc] initWithText:@"Number" items:numbers value:[NSNumber numberWithInt:2] format:^NSString *(NSObject *item) {
+        NSNumber *number = (NSNumber *)item;
+        return [NSString stringWithFormat:@"%d", [number intValue]];
+    }];
+
+    disclosureDataGroup.cells = [NSArray arrayWithObjects:disclosureDataCell1, disclosureDataCell2, nil];
+    
+    self.dataGroups = [NSArray arrayWithObjects:group1, checkmarkGroup, pickerGroup, disclosureDataGroup, nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

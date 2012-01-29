@@ -18,13 +18,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UIViewController *rootViewController;
+    
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[XPDataTable1ViewController alloc] initWithNibName:@"XPDataTable1ViewController" bundle:nil];
+        rootViewController = [[XPDataTable1ViewController alloc] initWithNibName:@"XPDataTable1ViewController" bundle:nil];
     } else {
-        self.viewController = [[XPDataTable1ViewController alloc] initWithNibName:@"XPDataTable1ViewController" bundle:nil];
+        rootViewController = [[XPDataTable1ViewController alloc] initWithNibName:@"XPDataTable1ViewController" bundle:nil];
     }
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
+    self.viewController = navigationController;
     self.window.rootViewController = self.viewController;
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
