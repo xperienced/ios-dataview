@@ -1,0 +1,12 @@
+Sample application that is using https://github.com/xperienced/ios-datatable
+This project uses git submodules to reference ios-datatable library, follow install instructions below.
+
+Install instructions:
+
+git clone git://github.com/xperienced/ios-dataview.git
+
+cd ios-dataview
+
+git submodule init
+
+git submodule update

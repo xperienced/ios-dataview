@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AAD426214E4632100ED90D3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD426114E4632100ED90D3 /* README */; };
 		1ABBE54214A3D20700B856A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBE54114A3D20700B856A8 /* UIKit.framework */; };
 		1ABBE54414A3D20700B856A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBE54314A3D20700B856A8 /* Foundation.framework */; };
 		1ABBE54614A3D20700B856A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBE54514A3D20700B856A8 /* CoreGraphics.framework */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AAD426114E4632100ED90D3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		1ABBE53D14A3D20700B856A8 /* ios-dataview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dataview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABBE54114A3D20700B856A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1ABBE54314A3D20700B856A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +65,7 @@
 		1ABBE53214A3D20700B856A8 = {
 			isa = PBXGroup;
 			children = (
+				1AAD426114E4632100ED90D3 /* README */,
 				1ABBE58414A3E54100B856A8 /* lib */,
 				1ABBE54714A3D20700B856A8 /* ios-dataview */,
 				1ABBE54014A3D20700B856A8 /* Frameworks */,
@@ -196,6 +199,7 @@
 			files = (
 				1ABBE54C14A3D20700B856A8 /* InfoPlist.strings in Resources */,
 				1ABBE56514A3D2BD00B856A8 /* XPDataTable1ViewController.xib in Resources */,
+				1AAD426214E4632100ED90D3 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
