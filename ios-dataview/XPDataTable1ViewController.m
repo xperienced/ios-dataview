@@ -31,6 +31,19 @@
 #import "XPCheckmarkDataCell.h"
 #import "XPPickerDataCell.h"
 #import "XPDisclosureDataCell.h"
+#import "XPDataCell+Configuration.h"
+
+@interface MyDataCellConfiguration : NSObject<XPDataCellConfigurationDelegate>
+
+@end
+
+@implementation MyDataCellConfiguration
+
+- (void)dataCell:(XPDataCell *)dataCell configureTableViewCell:(UITableViewCell *)tableViewCell forTableView:(UITableView *)tableView {
+    tableViewCell.textLabel.textColor = [UIColor redColor];
+}
+
+@end
 
 @implementation XPDataTable1ViewController
 
@@ -47,6 +60,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[XPDataCell configuration] setDelegate:[[MyDataCellConfiguration alloc] init] forClass:[XPDataCell class]];
 
     XPDataGroup *group1 = [[XPDataGroup alloc] initWithText:@"Basic cells"];
     
