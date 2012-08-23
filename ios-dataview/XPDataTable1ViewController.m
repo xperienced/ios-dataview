@@ -24,13 +24,7 @@
  */
 
 #import "XPDataTable1ViewController.h"
-#import "XPDataGroup.h"
-#import "XPDataCell.h"
-#import "XPSwitchDataCell.h"
-#import "XPSliderDataCell.h"
-#import "XPCheckmarkDataCell.h"
-#import "XPPickerDataCell.h"
-#import "XPDisclosureDataCell.h"
+#import "XPDataTable.h"
 #import "XPDataCell+Configuration.h"
 
 @interface MyDataCellConfiguration : NSObject<XPDataCellConfigurationDelegate>
@@ -69,8 +63,9 @@
     XPDataCell *cell2 = [[XPDataCell alloc] initWithText:@"Sample cell 2"];
     XPSwitchDataCell *cell3 = [[XPSwitchDataCell alloc] initWithText:@"Sample switch" on:YES];
     XPSliderDataCell *cell4 = [[XPSliderDataCell alloc] initWithText:@"Sample slider" value:.5f];
+    XPTextFieldDataCell *cell5 = [[XPTextFieldDataCell alloc] initWithText:@"Text field"];
     
-    group1.cells = [NSArray arrayWithObjects:cell1, cell2, cell3, cell4, nil];
+    group1.cells = [NSArray arrayWithObjects:cell1, cell2, cell3, cell4, cell5, nil];
     
     XPDataGroup *checkmarkGroup = [[XPDataGroup alloc] initWithText:@"Checkmark cells"];
     

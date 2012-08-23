@@ -160,7 +160,7 @@
 		1ABBE53414A3D20700B856A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 1ABBE53714A3D20700B856A8 /* Build configuration list for PBXProject "ios-dataview" */;
 			compatibilityVersion = "Xcode 3.2";
